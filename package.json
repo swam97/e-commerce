@@ -1,7 +1,7 @@
 {
   "name": "e-commerce",
-  "homepage": "https://github.com/wanmuz86/ecommerce-react-mar24",
-  "private": true,
+  "homepage": "https://swam97.github.io/e-commerce/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
