@@ -17,25 +17,25 @@ const Header = () => {
                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                        <li className="nav-item">
-                           <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+                           <NavLink className="nav-link active" aria-current="page" to="/e-commerce/">Home</NavLink>
                        </li>
                        <li className="nav-item">
-                           <NavLink className="nav-link" to="/categories/men's clothing">Men's clothing</NavLink>
+                           <NavLink className="nav-link" to="/e-commerce/categories/men's clothing">Men's clothing</NavLink>
                        </li>
                        <li className="nav-item">
-                           <NavLink className="nav-link" to="/categories/women's clothing">Women's clothing</NavLink>
+                           <NavLink className="nav-link" to="/e-commerce/categories/women's clothing">Women's clothing</NavLink>
                        </li>
                        <li className="nav-item">
-                           <NavLink className="nav-link" to="/categories/jewelery">Jewelery</NavLink>
+                           <NavLink className="nav-link" to="/e-commerce/categories/jewelery">Jewelery</NavLink>
                        </li>
                        <li className="nav-item">
-                           <NavLink className="nav-link" to="/categories/electronics">Electronics</NavLink>
+                           <NavLink className="nav-link" to="/e-commerce/categories/electronics">Electronics</NavLink>
                        </li>
 
                    </ul>
                    <div className="d-flex">
 
-                       <Link to="/cart"><button className="btn btn-outline-success me-2"><i className="bi bi-cart"></i> ({totalItemsInCart})</button></Link>
+                       <Link to="/e-commerce/cart"><button className="btn btn-outline-success me-2"><i className="bi bi-cart"></i> ({totalItemsInCart})</button></Link>
                    </div>
                </div>
            </div>

@@ -19,31 +19,31 @@ const router = createBrowserRouter([
     element:<App/>,
     children:[
       {
-        path:"",
+        path:"/e-commerce/",
         element:<Home image={banner1} title="Shopjerr"/>
       },
       {
-        path:"categories/electronics",
+        path:"/e-commerce/categories/electronics",
         element:<ShopCategory image={banner2} title="Electronics"/>
       },
       {
-        path:"categories/jewelery",
+        path:"/e-commerce/categories/jewelery",
         element:<ShopCategory image={banner3} title="Jewelery"/>
       },
       {
-        path:"categories/men's clothing",
+        path:"/e-commerce/categories/men's clothing",
         element:<ShopCategory image={banner1} title="Men's clothing"/>
       },
       {
-        path:"categories/women's clothing",
+        path:"/e-commerce/categories/women's clothing",
         element:<ShopCategory image={banner2} title="Women's clothing"/>
       },
       {
-        path:"products/:id",
+        path:"/e-commerce/products/:id",
         element:<Product/>
       },
       {
-        path:"cart",
+        path:"/e-commerce/cart",
         element:<Cart/>
       }
     ]
