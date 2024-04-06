@@ -8,6 +8,7 @@ const Home = ({image, title}) => {
   return (
     <div>
       <Banner image={image} title ={title} subtitle={subtitle}/>
+      <br></br>
       <Featured/>
     </div>
   )

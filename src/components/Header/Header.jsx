@@ -18,7 +18,7 @@ const Header = () => {
    return (
        <nav className="navbar navbar-expand-lg bg-warning">
            <div className="container">
-               <a className="navbar-brand">ShopJerr</a>
+               <a className="navbar-brand"><NavLink className="nav-link active" aria-current="page" to="/e-commerce/">ShopJerr</NavLink></a>
                
                <ul id='sidebar' className="sidebar" style={{listStyleType:"none"}}>
                         <li>
