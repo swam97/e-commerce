@@ -19,10 +19,15 @@ const Header = () => {
        <nav className="navbar navbar-expand-lg bg-warning">
            <div className="container">
                <a className="navbar-brand">ShopJerr</a>
+               
                <ul id='sidebar' className="sidebar" style={{listStyleType:"none"}}>
                         <li>
-                           <button onClick={hideSideBar}style={{backgroundColor:"rgb(252, 195, 33", border:"none", height:"100px"}}><i className="fa fa-close"></i></button>
+                           <button onClick={hideSideBar}style={{backgroundColor:"rgb(252, 195, 33", border:"none", height:"80px", color:'black'}}><i className="fa fa-close"></i></button>
                        </li>
+                       <div className="d-flex">
+                       <Link to="/e-commerce/cart"><button className="btn btn-outline-success me-2"><i className="bi bi-cart"></i> ({totalItemsInCart})</button></Link>
+                        </div>
+                        <hr/>
                        <li className="nav-item">
                            <NavLink className="nav-link active" aria-current="page" to="/e-commerce/">Home</NavLink>
                        </li>
@@ -44,6 +49,7 @@ const Header = () => {
                        </li>
 
                    </ul>
+                   
                <button onClick={showSideBar} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span className="navbar-toggler-icon"></span>
                </button>
