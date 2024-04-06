@@ -16,9 +16,9 @@ const Featured = () => {
                    : loading
                        ? <p>Loading...</p>
                        :
-                       <div className='row'>
+                       <div className='row g-3'>
                            {
-                               data?.map((val) => <div className='col-2' key={val.id}><Card item={val}/></div>)
+                               data?.map((val) => <div className='col-md-4 col-6' key={val.id}><Card item={val}/></div>)
                            }
                        </div>
 

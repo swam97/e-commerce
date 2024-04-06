@@ -6,12 +6,45 @@ import { useCart } from '../../context/CartContext'
 const Header = () => {
 
    const {totalItemsInCart} = useCart();
+   const showSideBar = () => {
+    const element = document.getElementById('sidebar');
+        element.style.display = 'flex';
+   }
+   const hideSideBar = () => {
+    const element = document.getElementById('sidebar');
+        element.style.display = 'none';
+}
 
    return (
        <nav className="navbar navbar-expand-lg bg-warning">
            <div className="container">
                <a className="navbar-brand">ShopJerr</a>
-               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <ul id='sidebar' className="sidebar" style={{listStyleType:"none"}}>
+                        <li>
+                           <button onClick={hideSideBar}style={{backgroundColor:"rgb(252, 195, 33", border:"none", height:"100px"}}><i className="fa fa-close"></i></button>
+                       </li>
+                       <li className="nav-item">
+                           <NavLink className="nav-link active" aria-current="page" to="/e-commerce/">Home</NavLink>
+                       </li>
+                       <hr/>
+                       <li className="nav-item">
+                           <NavLink className="nav-link" to="/e-commerce/categories/men's clothing">Men's clothing</NavLink>
+                       </li>
+                       <hr/>
+                       <li className="nav-item">
+                           <NavLink className="nav-link" to="/e-commerce/categories/women's clothing">Women's clothing</NavLink>
+                       </li>
+                       <hr/>
+                       <li className="nav-item">
+                           <NavLink className="nav-link" to="/e-commerce/categories/jewelery">Jewelery</NavLink>
+                       </li>
+                       <hr/>
+                       <li className="nav-item">
+                           <NavLink className="nav-link" to="/e-commerce/categories/electronics">Electronics</NavLink>
+                       </li>
+
+                   </ul>
+               <button onClick={showSideBar} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span className="navbar-toggler-icon"></span>
                </button>
                <div className="collapse navbar-collapse" id="navbarSupportedContent">
